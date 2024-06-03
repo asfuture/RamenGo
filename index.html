@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RamenGO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="header">
+        <img id="logo" class="logo" src="./assets/Yellow.png" alt="">
+        <div class="central">
+
+            <div class="imagLGI">
+                <div class="imagLG">
+                    <img class="imgLetreiro" src="./assets/letreiro.png" alt="">
+                    <img class="imgGo" src="./assets/GO!.png" alt="">
+                </div>
+                <img class="ilustracao" src="./assets/Ilustracao.png" alt="">
+            </div>
+
+            <div class="paragrafoBtn">
+                <p class="textoParagrafo">Enjoy a good ramen in the comfort of your house. Create your own ramen and choose your favorite flavour combination!</p>
+
+                    <button class="btnOrderNow"><label for="">ORDER NOW </label><img src="./assets/Fill 1.png" > </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="containerBroth">
+        <div>
+            <h2>First things first: select your favorite broth!</h2>
+            <p class="subtitulo">It will give the whole falvor on your ramen soup.</p>
+            <div class="cardapioBroth">
+                <button class="salt" id="salt" value="1">
+                    <img src="./assets/salt.png" alt="">
+                    <h1>Salt</h1>
+                    <p>Simple like the seawater, nothing more</p>
+                    <p id="preco">US$ 10</p>
+                </button>
+                <button class="shoyu" id="shoyu" value="2">
+                    <img src="./assets/shoyu.png" alt="">
+                    <h1>Shoyu</h1>
+                    <p>The good old and traditional soy sauce </p>
+                    <p id="preco">US$ 10</p>
+                </button>
+                <button class="miso" id="miso" value="3">
+                    <img src="./assets/miso.png" alt="">
+                    <h1>Miso</h1>
+                    <p>Paste made of fermented soybeans</p>
+                    <p id="preco">US$ 12</p>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="containerProteins">
+        <div>
+            <h2>It´s time to choose ( or not) your meat!</h2>
+            <p class="subtitulo">Some people love, some don´t. We have options for all tastes.</p>
+            <div class="cardapioProteins">
+                <button class="port" id="salt" value="1">
+                    <img src="./assets/pork.png" alt="">
+                    <h1>Chasu</h1>
+                    <p>A sliced flavour full pork meat with a selection od season vegetables.</p>
+                    <p id="preco">US$ 10</p>
+                </button>
+                <button class="yasai" id="yasai" value="2">
+                    <img src="./assets/yasai.png" alt="">
+                    <h1>Yasai Vegetarian </h1>
+                    <p>A delicius vegetarian lamen with a selection of season vegetables.</p>
+                    <p id="preco">US$ 10</p>
+                </button>
+                <button class="chicken" id="chicken" value="3">
+                    <img src="./assets/chicken.png" alt="">
+                    <h1>Karaague</h1>
+                    <p>Three units of fried chicken, moyashi, ajitama egg other vegetables.</p>
+                    <p id="preco">US$ 12</p>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <div class="containerBtnMyOrder">
+        <button onclick="fazerPedido()">PLACE MY ORDER <img src="./assets/Fill 1.png" ></button>
+    </div>
+
+
+    <section id="pedidoModal" class="containerPedido">
+          <!--<img class="logoPedido" src="./assets/Yellow.png" alt="">
+         <button class="close">fechar</button> -->
+        <div class="pedido">
+
+            <div class="pedidoRetorno">
+                <div>
+                    <img src="" id="img" alt="">
+                    <p>your Order:</p>
+                    <h1 id="description"></h1>
+                </div>
+            </div>
+
+            <div class="pedidoRetorno1">
+                <div>
+                    <img src="./assets/bowing.png" alt="">
+                <p class="textojapa">どもありがとうございます。</p>
+                <h1>Your order is being prepared</h1>
+                <p id="texto1">Hold on, when you least expect you will be eating your rámen. </p>
+               
+                
+                <div class="containerBtnMyOrder">
+                    <button class="close">PLACE NEW ORDER <img src="./assets/Fill 1.png" ></button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>

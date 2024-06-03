@@ -1,0 +1,267 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    max-width: 100%;
+    height: 768px;
+    border: 1px solid black;
+    background-image: url(./assets/pattern-vermelha.png);
+    background-position: center;
+    background-size: auto;
+    padding: 2px;
+   
+}
+.logo {
+    width: 124.69px;
+    height: 15.67px;
+    position: relative;
+    top: 25px;
+    left: 25px;
+    z-index: 5;
+}
+.central {
+    width: 100%;
+    height: 100%;
+    /* background-image: url(./assets/Ilustracao.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto; */
+}
+.imagLGI{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.ilustracao {
+    width: 43%;
+    position: relative;
+    right: 8%;
+}
+.imgLetreiro{
+    width: 40px;
+    height: 198px;
+    position: relative;
+    
+}
+.imgGo{
+    width: 230px;
+    position: relative;
+}
+.imagLG {
+    width: 275px;
+    height: 200px;
+    position: relative;
+    left: 45px;
+    top: 126px;
+    z-index: 2;
+}
+.textoGo{
+    font-size: 60px;
+}
+.textoParagrafo {
+    width: 201px;
+    height: 124px;
+    font-family: Rounded Mplus 1c;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #FFFFFF;
+}
+.btnOrderNow {
+    width: 213px;
+    height: 60px;
+    border-radius: 50px;
+    background: #1820EF;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+}
+.btnOrderNow label {
+    width: 157px;
+    height: 21px;
+    font-family: Rounded Mplus 1c;
+    font-size: 13px;
+    font-weight: 800;
+    line-height: 20.79px;
+    letter-spacing: 1.79px;
+    text-align: left;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.paragrafoBtn {
+    width: 220px;
+    position: relative;
+    bottom: 28%;
+    left: 22%;
+
+}
+
+/* SESSÃO BROTH*/
+.containerBroth, .containerProteins {
+    height: 448px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+.containerBroth h2, .containerProteins h2 {
+    font-family: Rounded Mplus 1c;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 47.52px;
+    text-align: center;
+}
+.subtitulo {
+    font-family: Rounded Mplus 1c;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+
+}
+.cardapioBroth, .cardapioProteins {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-family: Rounded Mplus 1c;
+}
+.cardapioBroth h1, .cardapioProteins h1 {
+   color: #1820EF;
+}
+.cardapioBroth p {
+     font-size: 14px;
+     font-weight: 400;
+     line-height: 16px;
+     text-align: center;
+ }
+.cardapioBroth button, .cardapioProteins button {
+    width: 320px;
+    height: 316px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 12px 0px #E0DBBF99;
+    cursor: pointer;
+}
+.selecionado {
+    background: #1820EF;
+}
+#preco {
+     font-size: 20px;
+     font-weight: 900;
+     line-height: 24px;
+     text-align: center;
+     color: #FF4E42;
+
+ }
+.containerBtnMyOrder {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+.containerBtnMyOrder button {
+    width: 213px;
+    height: 60px;
+    border-radius: 50px;
+    background: #C5C5C5;
+    color: #fff;
+    font-family: Rounded Mplus 1c;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 20.79px;
+    letter-spacing: 1.79px;
+    cursor: pointer;
+}
+.containerBtnMyOrder button:active {
+    background: #1820EF;
+}
+.containerBtnMyOrder img{
+   color: #fff;
+}
+
+
+/* Pedido API */
+.containerPedido {
+    display: none;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    position: fixed;
+    z-index: 3;
+    overflow: hidden;
+}
+
+.pedido {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+}
+.logoPedido {
+    width: 124.69px;
+    height: 15.67px;
+    position: fixed;
+    top: 50px;
+    left: 25px;
+}
+.pedidoRetorno, .pedidoRetorno1 {
+    width: 671px;
+    height: 768px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pedidoRetorno {
+    background-image: url(./assets/pattern-azul.png);
+}
+.pedidoRetorno1 {
+    background: #fff;
+}
+.pedidoRetorno div, .pedidoRetorno1 div {
+    text-align: center;
+}
+.pedidoRetorno img {
+    width: 354px;
+    height: 392px;
+}
+.pedidoRetorno h1 {
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 47.52px;
+    text-align: center;
+   color: #FFC024;
+}
+.pedidoRetorno p {
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 24px;
+    text-align: center;
+    color: #fff;
+
+}
+.pedidoRetorno1 h1 {
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 40px;
+    text-align: center;
+    color: #FF4E42;
+}
+.textojapa {
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 24px;
+    text-align: center;
+    color: #FFC024;
+
+}
+#texto1 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: #000;
+}
