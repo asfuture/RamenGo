@@ -8,11 +8,14 @@ brothButtons.forEach(function(button) {
         // Desmarca todos os botões de broth
         brothButtons.forEach(function(btn) {
             btn.classList.remove('selecionado');
+            btn.style.background = '#FAFAED';
         });
         // Marca o botão de broth clicado
         this.classList.add('selecionado');
+        this.style.background = '#1820EF';
     });
 });
+
 
 // Seleciona todos os botões de protein
 var proteinButtons = document.querySelectorAll('.cardapioProteins button');
@@ -56,7 +59,7 @@ proteinButtons.forEach(function(button) {
          },
          body:JSON.stringify(pedidoData)
      };
-
+     
      fetch(apiUrl, requestOptions)
      .then(response => {
          if (!response.ok){
@@ -104,10 +107,3 @@ close.onclick = function() {
     modal.style.display = 'none';
     location.reload(true)
 }
-
-
-
-
-
-
-
