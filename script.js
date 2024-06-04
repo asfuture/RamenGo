@@ -13,6 +13,28 @@ brothButtons.forEach(function(button) {
         // Marca o botão de broth clicado
         this.classList.add('selecionado');
         this.style.background = '#1820EF';
+
+        let valor = document.getElementsByClassName('selecionado')[0].value;
+        console.log('valor  do selecionado', valor);
+        
+        let mudaIcone = document.getElementsByClassName('selecionado')[0].getElementsByTagName('img')[0];
+        console.log('valor mudarIcone', mudaIcone);
+
+         switch (parseInt(valor)) {
+             case 1: mudaIcone.src = './assets/saltactive.png';
+             document.getElementById('shoyu').getElementsByTagName('img')[0].src='./assets/shoyu.png';
+             document.getElementById('miso').getElementsByTagName('img')[0].src='./assets/miso.png';
+             break;
+             case 2: mudaIcone.src = './assets/shoyuactive.png';
+             document.getElementById('salt').getElementsByTagName('img')[0].src='./assets/salt.png';
+             document.getElementById('miso').getElementsByTagName('img')[0].src='./assets/miso.png';
+             break;
+             case 3: mudaIcone.src = './assets/misoactive.png';
+             document.getElementById('salt').getElementsByTagName('img')[0].src='./assets/salt.png';
+             document.getElementById('shoyu').getElementsByTagName('img')[0].src='./assets/shoyu.png';
+             break;
+             default: console.log("Erro nos 3 ícones.");
+        }
     });
 });
 
@@ -31,6 +53,29 @@ proteinButtons.forEach(function(button) {
         // Marca o botão de protein clicado
         this.classList.add('selecionado');
         this.style.background = '#1820EF';
+
+        let valor = document.getElementsByClassName('selecionado')[0].value;
+        console.log('valor  do selecionado', valor);
+        
+        let mudaIcone = document.getElementsByClassName('selecionado')[0].getElementsByTagName('img')[0];
+        console.log('valor mudarIcone', mudaIcone);
+
+         switch (parseInt(valor)) {
+             case 1: mudaIcone.src = './assets/porkactive.png';
+             document.getElementById('yasai').getElementsByTagName('img')[0].src='./assets/yasai.png';
+             document.getElementById('chicken').getElementsByTagName('img')[0].src='./assets/chicken.png';
+             break;
+             case 2: mudaIcone.src = './assets/yasaiactive.png';
+             document.getElementById('pork').getElementsByTagName('img')[0].src='./assets/pork.png';
+             document.getElementById('chicken').getElementsByTagName('img')[0].src='./assets/chicken.png';
+             break;
+             case 3: mudaIcone.src = './assets/chickenactive.png';
+             document.getElementById('pork').getElementsByTagName('img')[0].src='./assets/pork.png';
+             document.getElementById('yasai').getElementsByTagName('img')[0].src='./assets/yasai.png';
+             break;
+             default: console.log("Erro nos 3 ícones.");
+        }
+
     });
 });
 
